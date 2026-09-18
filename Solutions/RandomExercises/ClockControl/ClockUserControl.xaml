@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="ClockControl.ClockUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ClockControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="450" Background="White">
+    <UserControl.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="60"/>
+            <Setter Property="Padding" Value="2"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="Margin" Value="25,10"/>
+            <Setter Property="MinWidth" Value="100"/>
+        </Style>
+    </UserControl.Resources>
+    <StackPanel Margin="20,10" HorizontalAlignment="Center">
+        <!--display textbox-->
+        <TextBox x:Name="txtDigital" Text="00:00:00" IsEnabled="True"></TextBox>
+        
+        <!--buttons-->
+        <StackPanel Orientation="Horizontal" Margin="10, 25" HorizontalAlignment="Center">
+            <Button x:Name="btnStart" Content="Start" Click="btnStart_Click"></Button>
+            <Button x:Name="btnStop" Content="Stop" Click="btnStop_Click"></Button>
+        </StackPanel>
+        
+    </StackPanel>
+</UserControl>

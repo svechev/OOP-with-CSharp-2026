@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Problem4Lab6">
+      <HintPath>..\Problem4Lab6\bin\Debug\net9.0\Problem4Lab6.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

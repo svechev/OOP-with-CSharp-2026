@@ -1,0 +1,13 @@
+.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.userosscahce
+*.sln.docstates
+*.log
+*.nupkg
+*.snupkg
+*.zip
+*.7z
+dzi_task/*

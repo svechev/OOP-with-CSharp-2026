@@ -1,0 +1,174 @@
+﻿<Window x:Class="Problem1AExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Problem1AExercise"
+        mc:Ignorable="d"
+        Title="Registration of materials"
+        Height="835" Width="400">
+    <Window.Resources>
+        <!--Textblock-->
+        <Style TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+            <Setter Property="Margin" Value="5,5,5,0"></Setter>
+        </Style>
+
+        <!--Textbox-->
+        <Style TargetType="TextBox">
+            <Setter Property="Padding" Value="2"></Setter>
+            <Setter Property="Margin" Value="5,0"></Setter>
+            <Setter Property="MinHeight" Value="20"></Setter>
+        </Style>
+
+        <!--Label-->
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="0,2,0,0"></Setter>
+        </Style>
+
+        <!--Disabled text box-->
+        <Style x:Key="txtDisabled">
+            <Setter Property="TextBox.IsEnabled" Value="False"></Setter>
+            <Setter Property="TextBox.Padding" Value="2"></Setter>
+            <Setter Property="TextBox.Margin" Value="5,0"></Setter>
+            <Setter Property="TextBox.MinHeight" Value="20"></Setter>
+            <Setter Property="TextBox.Background" Value="LightGray"></Setter>
+        </Style>
+
+    </Window.Resources>
+    <Grid>
+        <Border Margin="5">
+            <StackPanel>
+                <!--Buttons-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnApply" Grid.Column="0" Content="Apply" Margin="5"></Button>
+                    <Button x:Name="BtnReset" Grid.Column="1" Content="Reset" Margin="5"></Button>
+                    <Button x:Name="BtnRefresh" Grid.Column="2" Content="Refresh" Margin="5"></Button>
+                </Grid>
+
+                <!--Pulse properties-->
+                <TextBlock Text="Pulse properties"></TextBlock>
+
+                <!--Description-->
+                <Label Content="Description"></Label>
+                <TextBox></TextBox>
+
+                <!--Status & revision-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <!--Status-->
+                    <Label Grid.Row="0" Grid.Column="0" Content="Status"></Label>
+                    <TextBox Style="{StaticResource txtDisabled}" Grid.Row="1" Grid.Column="0"></TextBox>
+
+                    <!--Revision-->
+                    <Label Grid.Row="0" Grid.Column="1" Content="Revision"></Label>
+                    <TextBox Style="{StaticResource txtDisabled}" Grid.Row="1" Grid.Column="1"></TextBox>
+
+                </Grid>
+
+                <!--Part Number-->
+                <Label Content="Part number"></Label>
+                <TextBox></TextBox>
+
+                <!--Raw material-->
+                <TextBlock Text="Raw material"></TextBlock>
+
+                <!--Material-->
+                <Label Content="Material"></Label>
+                <ComboBox>
+                    <ComboBoxItem Content="Mahiro"></ComboBoxItem>
+                    <ComboBoxItem Content="Momiji"></ComboBoxItem>
+                </ComboBox>
+
+                <!--Manufactoring information-->
+                <TextBlock Text="Manufactoring information"></TextBlock>
+
+                <!--Centers-->
+                <Label Content="Centers"></Label>
+                <GroupBox Header="Work centers" BorderBrush="Black" BorderThickness="1">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <CheckBox Content="Weld"></CheckBox>
+                            <CheckBox Content="Assembly"></CheckBox>
+                            <CheckBox Content="Plasma"></CheckBox>
+                            <CheckBox Content="Purchase"></CheckBox>
+                            <CheckBox Content="Laser"></CheckBox>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1">
+                            <CheckBox Content="Lathe"></CheckBox>
+                            <CheckBox Content="Drill"></CheckBox>
+                            <CheckBox Content="Fold"></CheckBox>
+                            <CheckBox Content="Roll"></CheckBox>
+                            <CheckBox Content="Saw"></CheckBox>
+                        </StackPanel>
+                    </Grid>
+
+                </GroupBox>
+
+                <!--Length-->
+                <Label Content="Length"></Label>
+                <TextBox></TextBox>
+                
+                <!--Mass-->
+                <Label Content="Mass"></Label>
+                <TextBox Style="{StaticResource txtDisabled}"></TextBox>
+                
+                <!--Finish-->
+                <Label Content="Finish"></Label>
+                <ComboBox IsEnabled="False" Background="LightGray" Margin="5,0,5,0">
+                    <ComboBoxItem Content="Painted" IsSelected="True"></ComboBoxItem>
+                    <ComboBoxItem Content="Not painted"></ComboBoxItem>
+                    <ComboBoxItem Content="Something else"></ComboBoxItem>
+                </ComboBox>
+                
+                <!--Purchase information-->
+                <Label Content="Purchase information"></Label>
+                <ComboBox IsEnabled="False" Background="LightGray" Margin="5,0,5,0">
+                    <ComboBoxItem Content="Rubber" IsSelected="True"></ComboBoxItem>
+                    <ComboBoxItem Content="Not rubber"></ComboBoxItem>
+                    <ComboBoxItem Content="Something else"></ComboBoxItem>
+                </ComboBox>
+                
+                <!--Supplier name-->
+                <Label Content="Supplier name"></Label>
+                <TextBox></TextBox>
+                
+                <!--Supplier code-->
+                <Label Content="Supplier code"></Label>
+                <TextBox></TextBox>
+
+                <!--Additional info-->
+                <TextBlock Text="Additional info"></TextBlock>
+                
+                <!--Note-->
+                <Label Content="Note"></Label>
+                <TextBox Padding="2" Height="35" 
+                     TextWrapping="Wrap" 
+                     VerticalScrollBarVisibility="Auto"
+                     HorizontalScrollBarVisibility="Hidden"
+                     AcceptsReturn="True"></TextBox>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

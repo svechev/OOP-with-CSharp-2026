@@ -1,0 +1,11 @@
+﻿<Application x:Class="ColorChooserPainterWithBinding.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    StartupUri="ColorChooserPainterWindow.xaml">
+    <Application.Resources>
+        <!--<Style TargetType="Border" x:Key="FancyBorder">
+            <Setter Property="Background" Value="#4E1A3D"/>
+            <Setter Property="BorderThickness" Value="5"/>
+        </Style>-->
+    </Application.Resources>
+</Application>

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>C:\Users\User\fmi\c#\projects\Week6\Problem1Lab7\documents.txt</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Problem2Lab7">
+      <HintPath>..\Problem1Lab7\bin\Debug\net9.0\Problem2Lab7.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

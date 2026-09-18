@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Homework5Problem1.EditTextBox">
+    <Position X="2.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAABAAAAAAAIAgAAAAAAAAA=</HashCode>
+      <FileName>EditTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Homework5Problem1.MultiLineTextBox">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAABAAAAAAAIAgAAAAAAAAA=</HashCode>
+      <FileName>MultiLineTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Homework5Problem1.RichTextBox">
+    <Position X="4.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAABAAAAAAAIAgAAAAAAAAA=</HashCode>
+      <FileName>RichTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Homework5Problem1.TestPolymorphismProtected">
+    <Position X="8.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>TestPolymorphismProtected.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Homework5Problem1.TextBox">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAIAAAAAAAAABAAAAAAAIAgAAAAAAAAA=</HashCode>
+      <FileName>TextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

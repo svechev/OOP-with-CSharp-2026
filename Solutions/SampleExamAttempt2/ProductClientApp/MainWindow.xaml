@@ -1,0 +1,15 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProductClientApp"
+        xmlns:TradeServices="clr-namespace:TradeServices;assembly=TradeServices" x:Class="ProductClientApp.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="470" Width="874" Closing="Window_Closing" Loaded="Window_Loaded">
+    <Grid>
+
+        <TradeServices:OrderProduct x:Name="orderProduct" HorizontalAlignment="Left" Margin="37,0,0,0" VerticalAlignment="Center" Height="414" Width="718"/>
+
+    </Grid>
+</Window>

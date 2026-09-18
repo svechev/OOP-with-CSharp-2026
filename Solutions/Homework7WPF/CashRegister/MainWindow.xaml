@@ -1,0 +1,108 @@
+﻿<Window x:Class="CashRegister.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CashRegister"
+        mc:Ignorable="d"
+        Title="CashRegister" Height="400" Width="400">
+    <Window.Resources>
+        <!--Label style-->
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="15"></Setter>
+        </Style>
+
+        <!--Textbox style-->
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="Padding" Value="2"></Setter>
+        </Style>
+
+        <!--Button style-->
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="18"></Setter>
+            <Setter Property="MinHeight" Value="25"></Setter>
+            <Setter Property="Margin" Value="3"></Setter>
+        </Style>
+
+    </Window.Resources>
+    <StackPanel Margin="15">
+        <!--Grid for input textbox-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="12*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Content="$" Grid.Column="0" HorizontalAlignment="Right"></Label>
+            <TextBox x:Name="txtInput" Grid.Column="1"></TextBox>
+        </Grid>
+
+        <!--Grid for buttons-->
+        <Grid Margin="10,45,10,10">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <!--Number buttons-->
+            <Button x:Name="btn1" Content="1" Grid.Row="0" Grid.Column="0" Click="Digital_Click"></Button>
+            <Button x:Name="btn2" Content="2" Grid.Row="0" Grid.Column="1" Click="Digital_Click"></Button>
+            <Button x:Name="btn3" Content="3" Grid.Row="0" Grid.Column="2" Click="Digital_Click"></Button>
+            <Button x:Name="btn4" Content="4" Grid.Row="1" Grid.Column="0" Click="Digital_Click"></Button>
+            <Button x:Name="btn5" Content="5" Grid.Row="1" Grid.Column="1" Click="Digital_Click"></Button>
+            <Button x:Name="btn6" Content="6" Grid.Row="1" Grid.Column="2" Click="Digital_Click"></Button>
+            <Button x:Name="btn7" Content="7" Grid.Row="2" Grid.Column="0" Click="Digital_Click"></Button>
+            <Button x:Name="btn8" Content="8" Grid.Row="2" Grid.Column="1" Click="Digital_Click"></Button>
+            <Button x:Name="btn9" Content="9" Grid.Row="2" Grid.Column="2" Click="Digital_Click"></Button>
+            <Button x:Name="btn0" Content="0" Grid.Row="3" Grid.Column="1" Click="Digital_Click"></Button>
+            <Button x:Name="btnPoint" Content="." Grid.Row="3" Grid.Column="2" Click="Digital_Click"></Button>
+
+            <!--Action buttons-->
+            <Button x:Name="btnEnter" MinWidth="100" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Enter" Grid.Row="0" Grid.Column="3" Click="btnEnter_Click"></Button>
+            <Button x:Name="btnTotal" MinWidth="100" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Total" Grid.Row="1" Grid.Column="3" Click="btnTotal_Click"></Button>
+            <Button x:Name="btnDel"   MinWidth="100" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Delete" Grid.Row="2" Grid.Column="3" Click="btnDel_Click"></Button>
+            <Button x:Name="btnClr"   MinWidth="100"  HorizontalAlignment="Right"  VerticalAlignment="Center" Content="Clear" Grid.Row="3" Grid.Column="3" Click="btnClr_Click"></Button>
+
+        </Grid>
+
+        <!--Grid for output-->
+        <Grid Margin="0,25,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <!--Subtotal-->
+            <Label Grid.Row="0" Grid.Column="0" Content="Subtotal: "></Label>
+            <Label HorizontalAlignment="Right" Content="$" Grid.Row="0" Grid.Column="1"></Label>
+            <TextBox Grid.Row="0" Grid.Column="2" x:Name="txtSubtotal" IsEnabled="False"></TextBox>
+
+            <!--Tax-->
+            <Label Grid.Row="1" Grid.Column="0" Content="Tax: "></Label>
+            <Label HorizontalAlignment="Right" Content="$" Grid.Row="1" Grid.Column="1"></Label>
+            <TextBox Grid.Row="1" Grid.Column="2" x:Name="txtTax" IsEnabled="False"></TextBox>
+
+            <!--Total-->
+            <Label Grid.Row="2" Grid.Column="0" Content="Total: "></Label>
+            <Label HorizontalAlignment="Right" Content="$" Grid.Row="2" Grid.Column="1"></Label>
+            <TextBox Grid.Row="2" Grid.Column="2" x:Name="txtTotal" IsEnabled="False"></TextBox>
+
+        </Grid>
+
+    </StackPanel>
+</Window>

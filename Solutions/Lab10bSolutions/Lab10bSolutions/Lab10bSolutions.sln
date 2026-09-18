@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34302.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem1DataBinding", "Problem1\Problem1DataBinding.csproj", "{67A92D47-DB52-4B13-AA67-41E74C097B48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem2SlrBinding2Way", "Problem2SlrBinding2Way\Problem2SlrBinding2Way.csproj", "{675DEAC1-7E5F-4741-8FFE-3383CE0D8459}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem3PainterColorChooser", "Problem3PainterColorChooser\Problem3PainterColorChooser.csproj", "{1FB7DBAF-CB88-40A3-B45F-47430B81D1D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SliderButtonDemo", "SliderButtonDemo\SliderButtonDemo.csproj", "{53D756BB-9E6C-40C9-805C-1AE77C474D47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem4CommandReverse", "CommandReverse\Problem4CommandReverse.csproj", "{306DC21D-289E-00E3-7E78-96BE3D54B9B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem3PainterColorChooserWithBinding", "Problem3PainterColorChooserWithBinding\Problem3PainterColorChooserWithBinding.csproj", "{83A74C6D-266D-2078-9283-A3A92EFD4D94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67A92D47-DB52-4B13-AA67-41E74C097B48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A92D47-DB52-4B13-AA67-41E74C097B48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A92D47-DB52-4B13-AA67-41E74C097B48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A92D47-DB52-4B13-AA67-41E74C097B48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{675DEAC1-7E5F-4741-8FFE-3383CE0D8459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{675DEAC1-7E5F-4741-8FFE-3383CE0D8459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{675DEAC1-7E5F-4741-8FFE-3383CE0D8459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{675DEAC1-7E5F-4741-8FFE-3383CE0D8459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FB7DBAF-CB88-40A3-B45F-47430B81D1D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB7DBAF-CB88-40A3-B45F-47430B81D1D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB7DBAF-CB88-40A3-B45F-47430B81D1D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FB7DBAF-CB88-40A3-B45F-47430B81D1D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53D756BB-9E6C-40C9-805C-1AE77C474D47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D756BB-9E6C-40C9-805C-1AE77C474D47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D756BB-9E6C-40C9-805C-1AE77C474D47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D756BB-9E6C-40C9-805C-1AE77C474D47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{306DC21D-289E-00E3-7E78-96BE3D54B9B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{306DC21D-289E-00E3-7E78-96BE3D54B9B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{306DC21D-289E-00E3-7E78-96BE3D54B9B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{306DC21D-289E-00E3-7E78-96BE3D54B9B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83A74C6D-266D-2078-9283-A3A92EFD4D94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A74C6D-266D-2078-9283-A3A92EFD4D94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A74C6D-266D-2078-9283-A3A92EFD4D94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A74C6D-266D-2078-9283-A3A92EFD4D94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {091033A1-71B6-4D50-928A-C94EBCD412A9}
+	EndGlobalSection
+EndGlobal

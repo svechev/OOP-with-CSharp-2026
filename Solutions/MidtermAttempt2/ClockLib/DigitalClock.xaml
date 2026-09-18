@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="ClockLib.DigitalClock"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ClockLib"
+             mc:Ignorable="d" 
+             d:DesignHeight="250" d:DesignWidth="450" Background="LightSkyBlue">
+    <UserControl.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Margin" Value="20, 10"/>
+            <Setter Property="Width" Value="90"/>
+        </Style>
+    </UserControl.Resources>
+
+    <StackPanel Margin="65,0">
+        <TextBox x:Name="txtDigital" FontSize="50" 
+                 TextAlignment="Center" Text="00:00:00"></TextBox>
+
+        <!--start and stop buttons-->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10, 25">
+            <Button x:Name="btnStart" Content="Start" Click="btnStart_Click"></Button>
+            <Button x:Name="btnStop" Content="Stop" Click="btnStop_Click"></Button>
+        </StackPanel>
+
+        <!--reset button-->
+        <Button x:Name="btnReset" Content="Reset" Click="btnReset_Click"></Button>
+
+
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,17 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClockApp"
+        xmlns:ClockControl="clr-namespace:ClockControl;assembly=ClockControl" x:Class="ClockApp.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+
+        <ClockControl:ClockUserControl x:Name="CtrlClock" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="241" Width="421"/>
+
+        <Label x:Name="lblBind" Width="55" Background="Red" Height="25" Margin="200,0,100,0" KeyDown="lblBind_KeyDown" Focusable="True"></Label>
+        
+    </Grid>
+</Window>

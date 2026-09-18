@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="Problem1Lab13a.ClockUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Problem1Lab13a"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" d:Background="White">
+    <UserControl.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+
+        <!--Clock ellipse-->
+        <Ellipse Fill="Wheat" StrokeThickness="3" Stroke="Black"></Ellipse>
+
+        <!--Middle point of clock ellipse-->
+        <Ellipse Fill="Black" Width="10" Height="10" StrokeThickness="3" Stroke="Black"></Ellipse>
+
+        <!--Hour hand-->
+        <Rectangle  Width="4" Fill="Black" Margin="147.5, 70, 147.5, 150" Panel.ZIndex="3">
+            <Rectangle.RenderTransform>
+                <RotateTransform x:Name="hourHand" CenterX="2" CenterY="80" Angle="0"></RotateTransform>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+        <!--Minute hand-->
+        <Rectangle  Width="4" Fill="Green" Margin="149, 50, 149, 150" Panel.ZIndex="2">
+            <Rectangle.RenderTransform>
+                <RotateTransform x:Name="minuteHand" CenterX="1" CenterY="100" Angle="20"></RotateTransform>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+        <!--Second hand-->
+        <Rectangle  Width="4" Fill="Red" Margin="149.5, 20, 149.5, 150" Panel.ZIndex="1">
+            <Rectangle.RenderTransform>
+                <RotateTransform x:Name="secondHand" CenterX="0.5" CenterY="130" Angle="90"></RotateTransform>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+        <!--Clock Numbers-->
+        <TextBlock Text="12" Margin="145,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"></TextBlock>
+        <TextBlock Text="6" Margin="148,281,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+        <TextBlock Text="9" Margin="10,136,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+        <TextBlock Text="3" Margin="282,135,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+    </Grid>
+</UserControl>

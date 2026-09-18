@@ -1,0 +1,141 @@
+﻿<Window x:Class="WPFBasics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFBasics"
+        mc:Ignorable="d"
+        Title="Registration of materials" 
+        Height="835" Width="400">
+
+    <Border Padding="10">
+        <!--Format document ctrl+k+d-->
+        <StackPanel>
+            <!--Buttons-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <!--Margin: left, top, right, bottom-->
+                <Button x:Name="BtnApply" Click="BtnApply_Click" Grid.Column="0" Margin="0, 0, 6, 0" Content="Apply"/>
+                <Button x:Name="BtnReset" Click="BtnReset_Click" Grid.Column="1" Margin="3, 0, 3, 0" Content="Reset" />
+                <Button x:Name="BtnRefresh" Grid.Column="2" Margin="6, 0, 0, 0" Content="Refresh" />
+            </Grid>
+
+            <!--Properties-->
+            <TextBlock Text="Pulse properties" FontWeight="Bold" Margin="0, 10"/>
+
+            <Label Content="Description" Padding="0"/>
+            <TextBox Name="TxtDescription" Padding="2"/>
+
+            <!--Status & Revision-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Margin="0, 0, 10, 0">
+                    <Label Content="Status" Padding="0"/>
+                    <TextBox IsReadOnly="True" Background="#ddd" Padding="2"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <Label Content="Revision" Padding="0"/>
+                    <TextBox IsReadOnly="True" Background="#ddd" Padding="2"/>
+                </StackPanel>
+            </Grid>
+
+            <!--Part number-->
+            <Label Content="Part number" Padding="0"/>
+            <TextBox Padding="2"/>
+
+            <!--Raw material-->
+            <TextBlock Text="Raw material" FontWeight="Bold" Margin="0, 10"/>
+
+            <!--Material-->
+            <Label Content="Material" Padding="0"/>
+            <ComboBox Padding="2">
+                <ComboBoxItem Content="Plastic" />
+                <ComboBoxItem Content="Iron" />
+            </ComboBox>
+
+            <!--Information-->
+            <TextBlock Text="Manufactoring information" FontWeight="Bold" Margin="0, 10"/>
+            <Label Content="Centers" Padding="0"/>
+
+            <!--Work Centers-->
+            <GroupBox Padding="5" BorderBrush="Black" BorderThickness="1">
+                <GroupBox.Header>
+                    <StackPanel>
+                        <TextBlock Text="Work centers" />
+                    </StackPanel>
+                </GroupBox.Header>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" Margin="0, 0, 10, 0">
+                        <CheckBox Content="Weld" />
+                        <CheckBox Content="Assembly" />
+                        <CheckBox Content="Plasma" />
+                        <CheckBox Content="Laser" />
+                        <CheckBox Content="Purchase" />
+                    </StackPanel>
+                    
+                    <StackPanel Grid.Column="1">
+                        <CheckBox Content="Lathe" />
+                        <CheckBox Content="Drill" />
+                        <CheckBox Content="Fold" />
+                        <CheckBox Content="Roll" />
+                        <CheckBox Content="Sew" />
+                    </StackPanel>
+                </Grid>
+            </GroupBox>
+            
+            <!--Length-->
+            <Label Content="Length" Padding="0"/>
+            <TextBox Padding="2"/>
+
+            <!--Mass-->
+            <Label Content="Mass" Padding="0"/>
+            <TextBox IsReadOnly="True" Background="#ddd" Padding="2"/>
+            
+            <!--Finish-->
+            <Label Content="Finish" Padding="0"/>
+            <ComboBox Padding="2" SelectedIndex="0">
+                <ComboBoxItem Content="Painted" />
+                <ComboBoxItem Content="Iron" />
+            </ComboBox>
+
+            <!--Purchase information-->
+            <Label Content="Purchase information" Padding="0"/>
+            <ComboBox Padding="2" SelectedIndex="0">
+                <ComboBoxItem Content="Rubber" />
+                <ComboBoxItem Content="Iron" />
+            </ComboBox>
+            
+            <!--Supplier name-->
+            <Label Content="Supplier name" Padding="0"/>
+            <TextBox Padding="2"/>
+
+            <!--Supplier code-->
+            <Label Content="Supplier code" Padding="0"/>
+            <TextBox Padding="2"/>
+            
+            <!--Additional info-->
+            <TextBlock Text="Additional info" FontWeight="Bold" Margin="0, 10"/>
+
+            <!--Note-->
+            <Label Content="Note" Padding="0"/>
+            <TextBox Padding="2" Height="68" 
+                     TextWrapping="Wrap" 
+                     VerticalScrollBarVisibility="Auto"
+                     HorizontalScrollBarVisibility="Hidden"
+                     AcceptsReturn="True"/>
+
+        </StackPanel>
+    </Border>
+</Window>

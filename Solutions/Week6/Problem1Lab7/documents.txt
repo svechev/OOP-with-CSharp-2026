@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Problem2Lab7App</name>
+    </assembly>
+    <members>
+        <member name="M:Problem2Lab7App.ExtensionMethods.Volume(Problem2Lab7.Parallelepiped)">
+            <summary>
+            Compute volume of parallelepiped
+            </summary>
+            <param name="parallelepiped"></param>
+            <returns>volume of p</returns>
+        </member>
+        <member name="M:Problem2Lab7App.ExtensionMethods.Perimeter(Problem2Lab7.Rectangle)">
+            <summary>
+            Compute perimeter of a rectangle
+            </summary>
+            <param name="rect"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

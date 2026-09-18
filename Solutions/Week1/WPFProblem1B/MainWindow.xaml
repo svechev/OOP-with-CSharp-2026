@@ -1,0 +1,95 @@
+﻿<Window x:Class="WPFProblem1B.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFProblem1B"
+        mc:Ignorable="d"
+        Title="Calculator" Height="216" Width="298" Background="#888">
+    <Border Padding="10">
+        <StackPanel>
+            <!--Input-->
+            <TextBox Name="TxtInput" Padding="2" HorizontalContentAlignment="Right"/>
+
+            <!--Buttons Grid-->
+            <Grid Margin="0, 20, 0, 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2.5*" />
+                    <ColumnDefinition Width="1.75*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+
+                <!--Left Button Group-->
+                <Border Grid.Column="0" BorderBrush="#666" BorderThickness="2" Margin="0, 0, 5, 0">
+                    <Grid Background="#bbb">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="Btn1" Grid.Row="0" Grid.Column="0" Margin="3" Content="1" />
+                        <Button x:Name="Btn2" Grid.Row="0" Grid.Column="1" Margin="3" Content="2" />
+                        <Button x:Name="Btn3" Grid.Row="0" Grid.Column="2" Margin="3" Content="3" />
+
+                        <Button x:Name="Btn4" Grid.Row="1" Grid.Column="0" Margin="3" Content="4" />
+                        <Button x:Name="Btn5" Grid.Row="1" Grid.Column="1" Margin="3" Content="5" />
+                        <Button x:Name="Btn6" Grid.Row="1" Grid.Column="2" Margin="3" Content="6" />
+
+                        <Button x:Name="Btn7" Grid.Row="2" Grid.Column="0" Margin="3" Content="7" />
+                        <Button x:Name="Btn8" Grid.Row="2" Grid.Column="1" Margin="3" Content="8" />
+                        <Button x:Name="Btn9" Grid.Row="2" Grid.Column="2" Margin="3" Content="9" />
+
+                        <Button x:Name="Btn0" Grid.Row="3" Grid.Column="0" Margin="3" Content="0" />
+                        <Button x:Name="Btn00" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="3" Content="00" />
+                    </Grid>
+                </Border>
+                
+                <!--Middle Button Group-->
+                <Border Grid.Column="1" BorderBrush="#666" BorderThickness="2">
+                    <Grid  Background="#bbb">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="BtnPlus" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Margin="3" Content="+" />
+                        <Button x:Name="BtnMinus" Grid.Row="3" Grid.Column="0" Margin="3" Content="-" />
+                        <Button x:Name="BtnMult" Grid.Row="0" Grid.Column="1" Margin="3" Content="*" />
+                        <Button x:Name="BtnDiv" Grid.Row="1" Grid.Column="1" Margin="3" Content="/" />
+                        <Button x:Name="BtnDecimal" Grid.Row="2" Grid.Column="1" Margin="3" Content="." />
+                        <Button x:Name="BtnEquals" Grid.Row="3" Grid.Column="1" Margin="3" Content="=" />
+                    </Grid>
+                </Border>
+
+                <!--Right Button Group-->
+                <StackPanel Grid.Column="2">
+                    <Border BorderBrush="#666" BorderThickness="2">
+                        <StackPanel Background="#bbb">
+                            <Button x:Name="BtnC" Grid.Row="0" Margin="3" Content="C" />
+                            <Button x:Name="BtnCA" Grid.Row="1" Margin="3" Content="C/A" />
+                        </StackPanel>
+                    </Border>
+                   
+                    <Button x:Name="BtnOff" Grid.Row="0" Grid.Column="1" Margin="10, 25, 10, 3" Content="OFF" />
+                </StackPanel>
+
+            </Grid>
+
+        </StackPanel>
+    </Border>
+</Window>
