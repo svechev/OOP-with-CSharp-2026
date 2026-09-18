@@ -6,4 +6,4 @@ Solutions coded in Visual Studio 2022.
 
 ### Contents:
 - Tasks/ - contains pdfs of the tasks
-- Soultions/ - contains codes with solutions for the tasks
+- Solutions/ - contains codes with solutions for the tasks
